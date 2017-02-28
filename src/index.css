@@ -4,3 +4,11 @@ body {
   font-family: sans-serif;
   background-color: #0A2037;
 }
+
+#pp-nav li .active span, .pp-slidesNav .active span {
+    background: #ed1c7f;
+}
+
+#pp-nav span, .pp-slidesNav span {
+    background: #32B5C0;
+}

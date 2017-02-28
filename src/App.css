@@ -7,12 +7,24 @@
 }
 
 .App-header {
-  background-color: transparent;
-  height: 150px;
-  padding: 20px;
-  color: white;
+    width: 100%;
+    height: 20px;
+    text-align: left;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 0;
+    outline: 0;
+    z-index: 100;
+    color: #BBB;
+    background: transparent;
 }
 
-.App-intro {
-  font-size: large;
+.App-header img {
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    left: 120px;
+    height: 50px;
 }
