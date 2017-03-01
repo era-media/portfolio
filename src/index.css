@@ -1,8 +1,9 @@
-@font-face { font-family: "Texta"; src: url('./assets/fonts/Texta-Black.otf'); font-weight: 900; font-style: normal;}
-@font-face { font-family: "Texta"; src: url('./assets/fonts/Texta-BlackIt.otf'); font-weight: 900; font-style: italic;}
-@font-face { font-family: "Texta"; src: url('./assets/fonts/Texta-MediumIt.otf'); font-weight: 500; font-style: italic;}
-@font-face { font-family: "Texta"; src: url('./assets/fonts/Texta-Thin.otf'); font-weight: 100; font-style: normal;}
+@font-face { font-family: "Texta"; src: url('./assets/fonts/Texta-Black.otf'); font-weight: bolder; font-style: normal;}
+@font-face { font-family: "Texta"; src: url('./assets/fonts/Texta-BlackIt.otf'); font-weight: bolder; font-style: italic;}
+@font-face { font-family: "Texta"; src: url('./assets/fonts/Texta-MediumIt.otf'); font-weight: bold; font-style: italic;}
+@font-face { font-family: "Texta"; src: url('./assets/fonts/Texta-Thin.otf'); font-weight: lighter; font-style: normal;}
 
+h1, h2, h3, h4, h5, h6 { font-family: "Texta"; font-weight: bold; font-style: italic;}
 
 body {
     font-family:"Texta", Helvetica, Arial;
