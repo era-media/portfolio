@@ -1,15 +1,21 @@
-@font-face { font-family: "Texta"; src: url('./assets/fonts/Texta-Black.otf'); font-weight: bolder; font-style: normal;}
-@font-face { font-family: "Texta"; src: url('./assets/fonts/Texta-BlackIt.otf'); font-weight: bolder; font-style: italic;}
-@font-face { font-family: "Texta"; src: url('./assets/fonts/Texta-MediumIt.otf'); font-weight: bold; font-style: italic;}
-@font-face { font-family: "Texta"; src: url('./assets/fonts/Texta-Thin.otf'); font-weight: lighter; font-style: normal;}
+@font-face { font-family: "TextaBlack"; src: url('./assets/fonts/Texta-Black.otf'); font-style: normal;}
+@font-face { font-family: "TextaBlack"; src: url('./assets/fonts/Texta-BlackIt.otf'); font-style: italic;}
+@font-face { font-family: "TextaHeavy"; src: url('./assets/fonts/Texta-Heavy.otf'); font-style: normal;}
+@font-face { font-family: "TextaHeavy"; src: url('./assets/fonts/Texta-HeavyIt.otf'); font-style: italic;}
+@font-face { font-family: "TextaMedium"; src: url('./assets/fonts/Texta-MediumIt.otf'); font-style: italic;}
+@font-face { font-family: "Texta"; src: url('./assets/fonts/Texta-Thin.otf'); font-style: normal;}
 
-h1, h2, h3, h4, h5, h6 { font-family: "Texta"; font-weight: bold; font-style: italic;}
+h1 { font-family: "TextaHeavy"; letter-spacing: 2px; font-style: italic;}
+h2 { font-family: "TextaBlack"; letter-spacing: 2px; font-style: italic;}
+h3, h4, h5, h6 { font-family: "TextaHeavy"; letter-spacing: 2px; font-style: italic;}
+p { font-family: "TextaMedium"; letter-spacing: 2px; font-style: italic;}
 
 body {
     font-family:"Texta", Helvetica, Arial;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    text-align: left;
     background-color: #0A2037;
 }
 

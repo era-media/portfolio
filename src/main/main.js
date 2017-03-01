@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
+import Home from '../pages/home.js';
+import About from '../pages/about.js';
 
 class Main extends Component {
     render() {
         return (
             <div id="pagepiling">
-                <div className="section">
-                    <h1>We are a data-driven creative agency with a strong emphasis on content</h1>
-                </div>
-                <div className="section"></div>
+                <Home />
+                <About />
                 <div className="section"></div>
                 <div className="section"></div>
             </div>

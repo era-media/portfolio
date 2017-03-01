@@ -30,11 +30,24 @@
       To create a production bundle, use `npm run build`.
     -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <script type="text/javascript" src="https://cdn.rawgit.com/alvarotrigo/pagePiling.js/master/jquery.pagepiling.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#pagepiling').pagepiling({ direction: 'vertical', sectionsColor: ['#0A2037', 'white', '#404041', '#DCBF25'], navigation: {'textColor': '#EA1D76', 'bulletsColor': 'transparent', 'position': 'right'} });
+            $('#pagepiling').pagepiling({
+                direction: 'vertical',
+                sectionsColor: ['#0A2037', 'white', '#404041', '#DCBF25'],
+                navigation: {'textColor': '#EA1D76', 'bulletsColor': 'transparent', 'position': 'right'},
+                onLeave: function (index, nextIndex, direction) {
+
+                    //fading out the txt of the leaving section
+                    $('.section').eq(index - 1).find('h1, h2, p').fadeOut(700, 'easeInQuart');
+
+                    //fading in the text of the destination (in case it was fadedOut)
+                    $('.section').eq(nextIndex - 1).find('h1, h2, p').fadeIn(700, 'easeInQuart');
+                },
+            });
         });
     </script>
   </body>
