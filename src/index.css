@@ -3,7 +3,7 @@
 @font-face { font-family: "TextaHeavy"; src: url('./assets/fonts/Texta-Heavy.otf'); font-style: normal;}
 @font-face { font-family: "TextaHeavy"; src: url('./assets/fonts/Texta-HeavyIt.otf'); font-style: italic;}
 @font-face { font-family: "TextaMedium"; src: url('./assets/fonts/Texta-MediumIt.otf'); font-style: italic;}
-@font-face { font-family: "Texta"; src: url('./assets/fonts/Texta-Thin.otf'); font-style: normal;}
+@font-face { font-family: "TextaLight"; src: url('./assets/fonts/Texta-Light.otf'); font-style: normal;}
 
 h1 { font-family: "TextaHeavy"; letter-spacing: 2px; font-style: italic;}
 h2 { font-family: "TextaBlack"; letter-spacing: 2px; font-style: italic;}

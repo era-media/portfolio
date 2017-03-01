@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Home from '../pages/home.js';
 import About from '../pages/about.js';
+import Capability from '../pages/capability.js';
 
 class Main extends Component {
     render() {
@@ -8,7 +9,7 @@ class Main extends Component {
             <div id="pagepiling">
                 <Home />
                 <About />
-                <div className="section"></div>
+                <Capability />
                 <div className="section"></div>
             </div>
         );
