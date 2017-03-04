@@ -3,6 +3,15 @@ import React, { Component } from 'react';
 class Capability extends Component {
     render() {
 
+        const container = {
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'stretch',
+            flexDirection: 'row',
+            width: '100%',
+            height: '100%',
+        };
+
         const mainRow = {
             display: 'flex',
             flexDirection: 'row',
@@ -13,15 +22,15 @@ class Capability extends Component {
 
         const leftColumn = {
             display: 'flex',
-            flexGrow: '1',
-        }
+        };
 
         const rightColumn = {
             display: 'flex',
-            flexGrow: '1',
             flexDirection: 'column',
-            justifyContent: 'center',
-        }
+            justifyContent: 'flex-end',
+            backgroundColor: '#0A2037',
+            padding: '40px',
+        };
 
         const whiteRow = {
             display: 'flex',
@@ -34,24 +43,9 @@ class Capability extends Component {
             margin: '10px',
         };
 
-        const blueRow = {
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'stretch',
-            height: '100%',
-        };
-
-        const blueColumn = {
-            backgroundColor: '#0A2037',
-            margin: '10px',
-            height: 'initial',
-            display: 'flex',
-            flexDirection: 'column-reverse',
-        };
-
         const contentRow = {
             display: 'flex',
-        }
+        };
 
         const contentColumn = {
             display: 'flex',
@@ -62,19 +56,7 @@ class Capability extends Component {
             marginBottom: '50px',
             marginTop: '100px',
             width: '100%',
-        }
-
-        const headingRow = {
-            display: 'flex',
-        }
-
-        const headingColumn = {
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'flex-start',
-            margin: '50px',
-            width: '100%',
-        }
+        };
 
         const heading = {
             textAlign: 'left',
@@ -82,6 +64,8 @@ class Capability extends Component {
             fontSize: '4.0em',
             lineHeight: '1.0em',
             fontStyle: 'italic',
+            margin: '0',
+            width: '300px',
         };
 
         const list = {
@@ -89,7 +73,7 @@ class Capability extends Component {
             color: '#0A2037',
             fontSize: '2.0em',
             lineHeight: '1.0em',
-        }
+        };
 
         const divider = {
             marginBottom: '60px',
@@ -97,41 +81,35 @@ class Capability extends Component {
 
         return (
             <div className="section">
-                <div className="container main-container">
-                    <div className="row" style={mainRow}>
-                        <div className="col-md-6" style={leftColumn}>
-                            <div className="row" style={whiteRow}>
-                                <div className="col" style={whiteColumn}>
-                                    <div className="row" style={contentRow}>
-                                        <div className="col-xs-10 col-md-8 col-lg-8" style={contentColumn}>
-                                            <div className="row" style={divider} />
-                                            <ul className="list-unstyled" style={list}>
-                                                <li>RESEARCH & STRATEGY</li>
+                <div className="container-fluid">
+                    <div className="container" style={container}>
+                        <div className="row" style={mainRow}>
+                            <div className="col-md-6" style={leftColumn}>
+                                <div className="row" style={whiteRow}>
+                                    <div className="col" style={whiteColumn}>
+                                        <div className="row" style={contentRow}>
+                                            <div className="col-xs-10 col-md-8 col-lg-8" style={contentColumn}>
                                                 <div className="row" style={divider} />
-                                                <li>REACH</li>
-                                                <div className="row" style={divider} />
-                                                <li>CONTENT</li>
-                                                <div className="row" style={divider} />
-                                                <li>TECHNOLOGY</li>
-                                                <div className="row" style={divider} />
-                                                <li>CREATIVE</li>
-                                                <div className="row" style={divider} />
-                                                <li>DIGITAL & <br />SOCIAL</li>
-                                            </ul>
+                                                <ul className="list-unstyled" style={list}>
+                                                    <li>RESEARCH & STRATEGY</li>
+                                                    <div className="row" style={divider} />
+                                                    <li>REACH</li>
+                                                    <div className="row" style={divider} />
+                                                    <li>CONTENT</li>
+                                                    <div className="row" style={divider} />
+                                                    <li>TECHNOLOGY</li>
+                                                    <div className="row" style={divider} />
+                                                    <li>CREATIVE</li>
+                                                    <div className="row" style={divider} />
+                                                    <li>DIGITAL & <br />SOCIAL</li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-6" style={rightColumn}>
-                            <div className="row" style={blueRow}>
-                                <div className="col" style={blueColumn}>
-                                    <div className="row" style={headingRow}>
-                                        <div className="col-xs-10 col-md-6 col-lg-5" style={headingColumn}>
-                                            <h1 style={heading}>here's a list of our main capabilities.</h1>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div className="col-md-6" style={rightColumn}>
+                                <h1 style={heading}>here's a list of our main capabilities.</h1>
                             </div>
                         </div>
                     </div>

@@ -3,6 +3,15 @@ import React, { Component } from 'react';
 class About extends Component {
     render() {
 
+        const container = {
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'stretch',
+            flexDirection: 'row',
+            width: '100%',
+            height: '100%',
+        };
+
         const mainRow = {
             display: 'flex',
             flexDirection: 'row',
@@ -15,6 +24,13 @@ class About extends Component {
             display: 'flex',
         }
 
+        const rightColumn = {
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            backgroundColor: '#0A2037',
+        }
+
         const whiteRow = {
             display: 'flex',
             flexDirection: 'row',
@@ -24,25 +40,6 @@ class About extends Component {
 
         const whiteColumn = {
             margin: '10px',
-        };
-
-        const rightColumn = {
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-        }
-
-        const blueRow = {
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'stretch',
-            height: '100%',
-        };
-
-        const blueColumn = {
-            backgroundColor: '#0A2037',
-            margin: '10px',
-            height: 'initial',
         };
 
         const contentRow = {
@@ -82,26 +79,25 @@ class About extends Component {
 
         return (
             <div className="section">
-                <div className="container main-container">
-                    <div className="row" style={mainRow}>
-                        <div className="col-md-6" style={leftColumn}>
-                            <div className="row" style={whiteRow}>
-                                <div className="col" style={whiteColumn}>
-                                    <div className="row" style={contentRow}>
-                                        <div className="col-xs-10 col-md-8 col-lg-8" style={contentColumn}>
-                                            <h1 style={heading}>mission.</h1>
-                                            <p style={paragraph}>To tell meaningful brand stories through combining the power of high quality design, engaging content, and smart technology.</p>
-                                            <div className="row" style={divider} />
-                                            <h1 style={heading}>vision.</h1>
-                                            <p style={paragraph}>Because change is inevitable,<br /> we aim to lead it.</p>
+                <div className="container-fluid">
+                    <div className="container" style={container}>
+                        <div className="row" style={mainRow}>
+                            <div className="col-md-6" style={leftColumn}>
+                                <div className="row" style={whiteRow}>
+                                    <div className="col" style={whiteColumn}>
+                                        <div className="row" style={contentRow}>
+                                            <div className="col-xs-10 col-md-8 col-lg-8" style={contentColumn}>
+                                                <h1 style={heading}>mission.</h1>
+                                                <p style={paragraph}>To tell meaningful brand stories through combining the power of high quality design, engaging content, and smart technology.</p>
+                                                <div className="row" style={divider} />
+                                                <h1 style={heading}>vision.</h1>
+                                                <p style={paragraph}>Because change is inevitable,<br /> we aim to lead it.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-6" style={rightColumn}>
-                            <div className="row" style={blueRow}>
-                                <div className="col" style={blueColumn}></div>
+                            <div className="col-md-6" style={rightColumn}>
                             </div>
                         </div>
                     </div>

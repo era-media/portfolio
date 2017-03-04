@@ -3,8 +3,8 @@ import Home from '../pages/home.js';
 import About from '../pages/about.js';
 import Capability from '../pages/capability.js';
 import Client from '../pages/client.js';
-import WorkLeft from '../pages/work-left.js';
-import WorkRight from '../pages/work-right.js';
+import Work from '../pages/work.js';
+import Data from '../data/work.js';
 
 class Main extends Component {
     render() {
@@ -14,8 +14,8 @@ class Main extends Component {
                 <About />
                 <Capability />
                 <Client />
-                <WorkRight />
-                <WorkLeft />
+                <Work data={Data.MARKAZ}/>
+                <Work data={Data.IKEA}/>
             </div>
         );
     }

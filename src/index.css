@@ -38,17 +38,28 @@ body {
     background: #EA1D76;
 }
 
-#pp-nav span, .pp-slidesNav span {
-    background: #32B5C0;
+#pp-nav li span, .pp-slidesNav span {
+    background: #E0E0E0;
 }
 
 #pp-nav.right {
-    right: 40px;
+    right: 30px;
 }
 
-.main-container {
+/*.main-container {
+    display: -webkit-flex;
     display: flex;
-    align-items: stretch;
-    height: 100%;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: stretch !important;
+    align-items: stretch !important;
     width: 100%;
+    height: 100%;
+    background-color: transparent;
+}*/
+
+.container-fluid {
+    width: 100%;
+    height: 100%;
+    padding: 0;
 }
