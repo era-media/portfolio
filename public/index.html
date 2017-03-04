@@ -37,15 +37,15 @@
         $(document).ready(function() {
             $('#pagepiling').pagepiling({
                 direction: 'vertical',
-                sectionsColor: ['#0A2037', 'white', 'white', '#DCBF25'],
+                sectionsColor: ['#0A2037', 'white', 'white', 'white', 'white'],
                 navigation: {'textColor': '#EA1D76', 'bulletsColor': 'transparent', 'position': 'right'},
                 onLeave: function (index, nextIndex, direction) {
 
                     //fading out the txt of the leaving section
-                    $('.section').eq(index - 1).find('h1, h2, p').fadeOut(700, 'easeInQuart');
+                    $('.section').eq(index - 1).find('h1, h2, h3, h4, h5, h6, p, a, ul, li, img').fadeOut(700, 'easeInQuart');
 
                     //fading in the text of the destination (in case it was fadedOut)
-                    $('.section').eq(nextIndex - 1).find('h1, h2, p').fadeIn(700, 'easeInQuart');
+                    $('.section').eq(nextIndex - 1).find('h1, h2, h3, h4, h5, h6, p, a, ul, li, img').fadeIn(700, 'easeInQuart');
                 },
             });
         });

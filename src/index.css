@@ -3,12 +3,27 @@
 @font-face { font-family: "TextaHeavy"; src: url('./assets/fonts/Texta-Heavy.otf'); font-style: normal;}
 @font-face { font-family: "TextaHeavy"; src: url('./assets/fonts/Texta-HeavyIt.otf'); font-style: italic;}
 @font-face { font-family: "TextaMedium"; src: url('./assets/fonts/Texta-MediumIt.otf'); font-style: italic;}
+@font-face { font-family: "TextaMedium"; src: url('./assets/fonts/Texta-Medium.otf'); font-style: normal;}
 @font-face { font-family: "TextaLight"; src: url('./assets/fonts/Texta-Light.otf'); font-style: normal;}
 
-h1 { font-family: "TextaHeavy"; letter-spacing: 2px; font-style: italic;}
+h1 { font-family: "TextaHeavy"; letter-spacing: 2px; font-style: norm;}
 h2 { font-family: "TextaBlack"; letter-spacing: 2px; font-style: italic;}
-h3, h4, h5, h6 { font-family: "TextaHeavy"; letter-spacing: 2px; font-style: italic;}
-p { font-family: "TextaMedium"; letter-spacing: 2px; font-style: italic;}
+h3, h4, h5, h6 { font-family: "TextaHeavy"; letter-spacing: 2px; font-style: normal;}
+p { font-family: "TextaMedium"; letter-spacing: 1px; font-style: normal;}
+
+a {
+    color: white;
+    text-decoration: underline;
+    font-family: "TextaMedium";
+    letter-spacing: 1px;
+    font-style: normal;
+    line-height: 1.6em;
+}
+
+a:focus, a:hover {
+    color: #EA1D76;
+    text-decoration: underline;
+}
 
 body {
     font-family:"Texta", Helvetica, Arial;
@@ -25,4 +40,15 @@ body {
 
 #pp-nav span, .pp-slidesNav span {
     background: #32B5C0;
+}
+
+#pp-nav.right {
+    right: 40px;
+}
+
+.main-container {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    width: 100%;
 }
