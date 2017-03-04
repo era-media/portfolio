@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Home from '../pages/home.js';
 import About from '../pages/about.js';
 import Capability from '../pages/capability.js';
+import Client from '../pages/client.js';
+import WorkLeft from '../pages/work-left.js';
+import WorkRight from '../pages/work-right.js';
 
 class Main extends Component {
     render() {
@@ -10,7 +13,9 @@ class Main extends Component {
                 <Home />
                 <About />
                 <Capability />
-                <div className="section"></div>
+                <Client />
+                <WorkRight />
+                <WorkLeft />
             </div>
         );
     }
