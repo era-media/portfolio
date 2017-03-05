@@ -3,12 +3,12 @@ import Twitter from '../../assets/images/social-media/twitter.svg';
 import Instagram from '../../assets/images/social-media/instagram.svg';
 
 class SocialList extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         this.state = {
-            twitter: this.props.twitter,
-            instagram: this.props.instagram
+            twitter: props.twitter,
+            instagram: props.instagram
         }
     };
 
