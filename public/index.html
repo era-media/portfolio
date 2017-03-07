@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/alvarotrigo/pagePiling.js/master/jquery.pagepiling.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.3/jquery.fullpage.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/9cd82c5955.js"></script>
     <!--
       Notice the use of %PUBLIC_URL% in the tag above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -31,24 +32,9 @@
     -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-    <script type="text/javascript" src="https://cdn.rawgit.com/alvarotrigo/pagePiling.js/master/jquery.pagepiling.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.3/jquery.fullpage.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.3/vendors/jquery.easings.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#pagepiling').pagepiling({
-                direction: 'vertical',
-                sectionsColor: ['#0A2037', 'white', 'white', 'white', 'white'],
-                navigation: {'textColor': '#EA1D76', 'bulletsColor': 'transparent', 'position': 'right'},
-                onLeave: function (index, nextIndex, direction) {
-
-                    //fading out the txt of the leaving section
-                    $('.section').eq(index - 1).find('h1, h2, h3, h4, h5, h6, p, a, ul, li, img').fadeOut(700, 'easeInQuart');
-
-                    //fading in the text of the destination (in case it was fadedOut)
-                    $('.section').eq(nextIndex - 1).find('h1, h2, h3, h4, h5, h6, p, a, ul, li, img').fadeIn(700, 'easeInQuart');
-                },
-            });
-        });
-    </script>
+    <script type="text/javascript" src="%PUBLIC_URL%/page.js"></script>
   </body>
 </html>

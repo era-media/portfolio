@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import SocialList from '../components/social/social-list.js';
+import WorkModal from  '../components/modal/work-modal.js';
 
 class Work extends Component {
     constructor(props) {
         super(props);
-        let data = props.data;
-        console.log(data.company);
 
+        let data = props.data;
         this.state = {
+            data: data,
             flow: data.flow,
             company: data.company,
+            heading: data.heading,
             about: data.about,
             goal: data.goal,
             approach: data.approach,
@@ -17,7 +18,19 @@ class Work extends Component {
             video: data.video,
             twitter: data.twitter,
             instagram: data.instagram,
+            showModal: false,
         };
+
+        this.handleOpenModal = this.handleOpenModal.bind(this);
+        this.handleCloseModal = this.handleCloseModal.bind(this);
+    };
+
+    handleOpenModal() {
+        this.setState({ showModal: true });
+    };
+
+    handleCloseModal() {
+        this.setState({ showModal: false });
     };
 
     render() {
@@ -38,8 +51,9 @@ class Work extends Component {
         const mainRow = {
             display: 'flex',
             flexDirection: `${this.state.flow}`,
-            alignItems: 'stretch',
-            margin: '20px auto',
+            alignItems: 'flex-end',
+            justifyContent: 'flex-end',
+            margin: '60px',
             width: '100%',
         };
 
@@ -47,49 +61,55 @@ class Work extends Component {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'flex-end',
-            backgroundColor: '#0A2037',
-            padding: '40px',
+            backgroundColor: 'RGBA(10, 32, 55, 0.90)',
+            margin: '25px',
             color: 'white',
         };
 
+        const headingRow = {
+            padding: '35px',
+        }
+
         const heading = {
             textAlign: 'left',
-            color: '#FFFFFF',
-            fontSize: '4.0em',
-            lineHeight: '1.0em',
+            fontSize: '2.4em',
+            lineHeight: '1.1em',
             fontStyle: 'italic',
-            margin: '0',
-            width: '70%',
+            marginBottom: '5px',
         };
 
-        const divider = {
-            marginBottom: '40px',
+        const paragraph = {
+            textAlign: 'left',
+            fontSize: '0.9em',
+            lineHeight: '1.4em',
+            fontStyle: 'normal',
+            marginBottom: '3px',
         };
+
+        const span = {
+            lineHeight: '0.8em',
+            verticalAlign: 'text-bottom',
+        }
+
+        const modalVisibility = this.state.showModal;
 
         return (
             <div className="section" style={section}>
                 <div className="container-fluid">
-                    <div className="container" style={container}>
-                        <div className="row" style={mainRow}>
-                            <div className="col-md-3" style={column}>
-                                <h6>{this.state.company}</h6>
-                                <p></p>
-                                <p>{this.state.about}</p>
-                                <div className="row" style={divider} />
-                                <h6>THE GOAL</h6>
-                                <p></p>
-                                <p>{this.state.goal}</p>
-                                <div className="row" style={divider} />
-                                <h6>THE APPROACH</h6>
-                                <p></p>
-                                <p>{this.state.approach}</p>
-                                <div className="row" style={divider} />
-                                <a href=""><h6>Watch Video</h6></a>
-                                <div className="row" style={divider} />
-                                <SocialList twitter={this.state.twitter} instagram={this.state.instagram} />
+                    { modalVisibility ? (
+                        <WorkModal data={this.state.data} clickHandler={this.handleCloseModal}/>
+                    ) : (
+                        <div className="container" style={container}>
+                            <div className="row" style={mainRow}>
+                                <div className="col-md-4" style={column}>
+                                    <div className="row" style={headingRow} >
+                                        <h1 style={heading}>{this.state.heading}</h1>
+                                        <button className="btn work-button" onClick={this.handleOpenModal} ><p style={paragraph}>Read More <span style={span}>→</span></p></button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    )}
                 </div>
             </div>
         );

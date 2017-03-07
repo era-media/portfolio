@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 class Capability extends Component {
     render() {
 
+        const section = {
+            backgroundColor: 'white',
+        };
+
         const container = {
             display: 'flex',
             justifyContent: 'center',
@@ -26,16 +30,19 @@ class Capability extends Component {
 
         const rightColumn = {
             display: 'flex',
-            flexDirection: 'column',
+            flexDirection: 'row',
             justifyContent: 'flex-end',
+            background: `url(https://firebasestorage.googleapis.com/v0/b/era-portfolio.appspot.com/o/era-artwork%2Fsea_side.jpg?alt=media&token=c4898e6a-f362-4c4b-ace1-80a99c8bbe8d) no-repeat center center`,
+            backgroundSize: 'cover',
             backgroundColor: '#0A2037',
+            color: 'white',
             padding: '40px',
         };
 
         const whiteRow = {
             display: 'flex',
             flexDirection: 'row',
-            alignItems: 'stretch',
+            alignItems: 'center',
             height: '100%',
         };
 
@@ -50,7 +57,7 @@ class Capability extends Component {
         const contentColumn = {
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'flex-start',
+            justifyContent: 'center',
             marginLeft: '60px',
             marginRight: '40px',
             marginBottom: '50px',
@@ -60,12 +67,10 @@ class Capability extends Component {
 
         const heading = {
             textAlign: 'left',
-            color: '#FFFFFF',
-            fontSize: '4.0em',
-            lineHeight: '1.0em',
+            fontSize: '2.6em',
+            lineHeight: '1.1em',
             fontStyle: 'italic',
-            margin: '0',
-            width: '300px',
+            marginBottom: '5px',
         };
 
         const list = {
@@ -76,11 +81,25 @@ class Capability extends Component {
         };
 
         const divider = {
-            marginBottom: '60px',
+            marginBottom: '40px',
         };
 
+        const headingRow = {
+            margin: '45px',
+            display: 'flex',
+            justifyContent: 'flex-end',
+            width: '408px',
+            height: '166px',
+        };
+
+        const headingCol = {
+            padding: '35px',
+            width: '410px',
+            backgroundColor: 'RGBA(10, 32, 55, 0.90)',
+        }
+
         return (
-            <div className="section">
+            <div className="section" style={section} >
                 <div className="container-fluid">
                     <div className="container" style={container}>
                         <div className="row" style={mainRow}>
@@ -109,7 +128,11 @@ class Capability extends Component {
                                 </div>
                             </div>
                             <div className="col-md-6" style={rightColumn}>
-                                <h1 style={heading}>here's a list of our main capabilities.</h1>
+                                <div className="row" style={headingRow} >
+                                    <div className="col" style={headingCol}>
+                                        <h1 style={heading}>here's a list of our main capabilities.</h1>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

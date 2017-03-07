@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 class Client extends Component {
     render() {
 
+        const section = {
+            backgroundColor: 'white',
+        };
+
         const container = {
             display: 'flex',
             justifyContent: 'center',
@@ -26,6 +30,9 @@ class Client extends Component {
             justifyContent: 'flex-end',
             backgroundColor: '#0A2037',
             padding: '40px',
+            background: `url(https://firebasestorage.googleapis.com/v0/b/era-portfolio.appspot.com/o/era-artwork%2Fgallery.jpg?alt=media&token=3a8a99f8-94ab-40c3-986c-6069bd121bb5) no-repeat center center`,
+            backgroundSize: 'cover',
+            color: 'white',
         };
 
         const rightColumn = {
@@ -34,29 +41,41 @@ class Client extends Component {
             backgroundSize: 'contain',
         };
 
+        // const heading = {
+        //     textAlign: 'left',
+        //     color: '#FFFFFF',
+        //     fontSize: '4.5em',
+        //     lineHeight: '1.0em',
+        //     fontStyle: 'italic',
+        //     margin: '0',
+        //     width: '75%',
+        // };
+
         const heading = {
             textAlign: 'left',
-            color: '#FFFFFF',
-            fontSize: '4.0em',
-            lineHeight: '1.0em',
+            fontSize: '2.6em',
+            lineHeight: '1.1em',
             fontStyle: 'italic',
-            margin: '0',
-            width: '70%',
+            marginBottom: '5px',
         };
 
-        const divider = {
-            marginBottom: '60px',
+        const headingRow = {
+            padding: '35px',
+            margin: '45px',
+            backgroundColor: 'RGBA(10, 32, 55, 0.90)',
+            width: '455px',
         };
+
 
         return (
-            <div className="section">
+            <div className="section" style={section}>
                 <div className="container-fluid">
                     <div className="container" style={container}>
                         <div className="row" style={mainRow}>
                             <div className="col-md-6" style={leftColumn}>
-                                <h1 style={heading}>here are some of the people that trust us.</h1>
-                                <div className="row" style={divider} />
-                                <h1 style={heading}>you might know them...</h1>
+                                <div className="row" style={headingRow} >
+                                    <h1 style={heading}>here are some of the people that trust us.</h1>
+                                </div>
                             </div>
                             <div className="col-md-6" style={rightColumn}>
                             </div>

@@ -4,12 +4,13 @@
 @font-face { font-family: "TextaHeavy"; src: url('./assets/fonts/Texta-HeavyIt.otf'); font-style: italic;}
 @font-face { font-family: "TextaMedium"; src: url('./assets/fonts/Texta-MediumIt.otf'); font-style: italic;}
 @font-face { font-family: "TextaMedium"; src: url('./assets/fonts/Texta-Medium.otf'); font-style: normal;}
+@font-face { font-family: "TextaBook"; src: url('./assets/fonts/Texta-Book.otf'); font-style: normal;}
 @font-face { font-family: "TextaLight"; src: url('./assets/fonts/Texta-Light.otf'); font-style: normal;}
 
-h1 { font-family: "TextaHeavy"; letter-spacing: 2px; font-style: norm;}
+h1 { font-family: "TextaHeavy"; letter-spacing: 2px; font-style: normal;}
 h2 { font-family: "TextaBlack"; letter-spacing: 2px; font-style: italic;}
 h3, h4, h5, h6 { font-family: "TextaHeavy"; letter-spacing: 2px; font-style: normal;}
-p { font-family: "TextaMedium"; letter-spacing: 1px; font-style: normal;}
+p, span { font-family: "TextaBook"; letter-spacing: 1px; font-style: normal;}
 
 a {
     color: white;
@@ -34,32 +35,41 @@ body {
     background-color: #0A2037;
 }
 
-#pp-nav li .active span, .pp-slidesNav .active span {
-    background: #EA1D76;
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background-color: #ED1C7F;
+    color: #ED1C7F;
 }
-
-#pp-nav li span, .pp-slidesNav span {
-    background: #E0E0E0;
-}
-
-#pp-nav.right {
-    right: 30px;
-}
-
-/*.main-container {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: stretch !important;
-    align-items: stretch !important;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-}*/
 
 .container-fluid {
     width: 100%;
     height: 100%;
     padding: 0;
+}
+
+.work-button {
+    padding: 4px 0px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: white;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.work-button:hover, .work-button:active {
+    color: #ED1C7F;
+    outline: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.work-button:focus {
+    color: #FFFFFF;
+    outline: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.social-icon svg:hover {
+    fill: #ed1a7f;
 }

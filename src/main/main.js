@@ -9,13 +9,17 @@ import Data from '../data/work.js';
 class Main extends Component {
     render() {
         return (
-            <div id="pagepiling">
+            <div id="fullpage">
                 <Home />
                 <About />
                 <Capability />
                 <Client />
+                <Work data={Data.KOC}/>
                 <Work data={Data.MARKAZ}/>
+                <Work data={Data.BOE}/>
+                <Work data={Data.CIRCUIT}/>
                 <Work data={Data.IKEA}/>
+                <Work data={Data.ALROUMI}/>
             </div>
         );
     }
