@@ -41,16 +41,6 @@ class Client extends Component {
             backgroundSize: 'contain',
         };
 
-        // const heading = {
-        //     textAlign: 'left',
-        //     color: '#FFFFFF',
-        //     fontSize: '4.5em',
-        //     lineHeight: '1.0em',
-        //     fontStyle: 'italic',
-        //     margin: '0',
-        //     width: '75%',
-        // };
-
         const heading = {
             textAlign: 'left',
             fontSize: '2.6em',

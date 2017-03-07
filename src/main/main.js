@@ -4,6 +4,7 @@ import About from '../pages/about.js';
 import Capability from '../pages/capability.js';
 import Client from '../pages/client.js';
 import Work from '../pages/work.js';
+import End from '../pages/end.js';
 import Data from '../data/work.js';
 
 class Main extends Component {
@@ -20,6 +21,7 @@ class Main extends Component {
                 <Work data={Data.CIRCUIT}/>
                 <Work data={Data.IKEA}/>
                 <Work data={Data.ALROUMI}/>
+                <End />
             </div>
         );
     }
