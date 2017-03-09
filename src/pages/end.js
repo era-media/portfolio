@@ -17,14 +17,15 @@ class End extends Component {
 
         const row = {
             display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
             alignItems: 'center',
         };
 
         const column = {
             display: 'flex',
-            flexDirection: 'row',
-            justifyContent: 'center',
-            margin: 'auto 40px',
+            flexDirection: 'column',
+            alignItems: 'center',
         };
 
         const paragraph = {

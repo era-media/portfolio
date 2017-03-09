@@ -29,7 +29,7 @@ class About extends Component {
             flexDirection: 'column',
             justifyContent: 'center',
             padding: '50px 25px',
-            margin: '10px auto',
+            margin: '25px auto',
         }
 
         const rightColumn = {

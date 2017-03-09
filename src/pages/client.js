@@ -41,7 +41,8 @@ class Client extends Component {
             background: `url(https://firebasestorage.googleapis.com/v0/b/era-portfolio.appspot.com/o/clients%2Fclients.png?alt=media&token=b29179a0-7835-4209-87e9-e2c1f0d94fa2) no-repeat center center`,
             backgroundSize: 'contain',
             minHeight: '500px',
-            padding: '0px',
+            padding: '10px',
+            margin: '25px auto',
         };
 
         const heading = {

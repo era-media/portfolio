@@ -59,7 +59,7 @@ class Capability extends Component {
             fontSize: '2.0em',
             lineHeight: '1.0em',
             padding: '40px',
-            marginLeft: '35px',
+            margin: '35px',
         };
 
         const divider = {
