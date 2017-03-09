@@ -13,13 +13,16 @@ class Home extends Component {
             flexDirection: 'row',
             width: '100%',
             height: '100%',
-            background: `url(https://firebasestorage.googleapis.com/v0/b/era-portfolio.appspot.com/o/era-artwork%2Fair_hockey.gif?alt=media&token=e8c0ae52-fa68-4f0f-9684-7f09624e6629) no-repeat center center`,
-            backgroundSize: 'cover',
+            background: `url(https://firebasestorage.googleapis.com/v0/b/era-portfolio.appspot.com/o/era-artwork%2Fair_hockey_animation.gif?alt=media&token=e70bf189-d74b-402a-b2e2-8a48a8efb700) no-repeat center center`,
+            backgroundSize: 'contain',
         };
 
         const row = {
             display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'flex-start',
             alignItems: 'center',
+            margin: '10px',
         };
 
         const column = {
@@ -36,7 +39,7 @@ class Home extends Component {
         };
 
         const divider = {
-            height: '60px',
+            height: '40px',
         };
 
         return (

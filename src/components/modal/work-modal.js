@@ -57,7 +57,7 @@ class WorkModal extends Component {
         const subHeading = {
             textAlign: 'left',
             fontSize: '1.0em',
-            lineHeight: '1.2em',
+            lineHeight: '1.1em',
             fontStyle: 'normal',
             marginBottom: '3px',
         };
@@ -65,7 +65,7 @@ class WorkModal extends Component {
         const paragraph = {
             textAlign: 'left',
             fontSize: '1.0em',
-            lineHeight: '1.4em',
+            lineHeight: '1.2em',
             fontStyle: 'normal',
             marginBottom: '3px',
         };
