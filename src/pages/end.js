@@ -17,27 +17,21 @@ class End extends Component {
 
         const row = {
             display: 'flex',
+            alignItems: 'center',
         };
 
         const column = {
             display: 'flex',
-            flexDirection: 'column',
+            flexDirection: 'row',
             justifyContent: 'center',
-            marginLeft: '90px',
-            marginRight: '60px',
-            marginBottom: '150px',
-            marginTop: '150px',
+            margin: 'auto 40px',
         };
 
         const paragraph = {
             textAlign: 'left',
             fontStyle: 'italic',
             color: 'white',
-            fontSize: '2.2em',
             lineHeight: '1.1em',
-        };
-
-        const divider = {
         };
 
         return (
@@ -45,8 +39,8 @@ class End extends Component {
                 <div className="container-fluid">
                     <div className="container" style={container}>
                         <div className="row" style={row}>
-                            <div className="col-xs-12 col-sm-10" style={column} >
-                                <h1 style={paragraph}>*insert qoute here that will<br/> inspire you to sign with us...</h1>
+                            <div className="col" style={column} >
+                                <h1 className="end_paragraph" style={paragraph}>*insert qoute here that will inspire you to work with us...</h1>
                             </div>
                         </div>
                     </div>

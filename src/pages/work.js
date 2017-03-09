@@ -53,7 +53,6 @@ class Work extends Component {
             flexDirection: `${this.state.flow}`,
             alignItems: 'flex-end',
             justifyContent: 'flex-end',
-            margin: '60px',
             width: '100%',
         };
 
@@ -62,7 +61,7 @@ class Work extends Component {
             flexDirection: 'column',
             justifyContent: 'flex-end',
             backgroundColor: 'RGBA(10, 32, 55, 0.90)',
-            margin: '25px',
+            margin: '60px 35px',
             color: 'white',
         };
 
@@ -72,7 +71,6 @@ class Work extends Component {
 
         const heading = {
             textAlign: 'left',
-            fontSize: '2.4em',
             lineHeight: '1.1em',
             fontStyle: 'italic',
             marginBottom: '5px',
@@ -103,8 +101,8 @@ class Work extends Component {
                             <div className="row" style={mainRow}>
                                 <div className="col-md-4" style={column}>
                                     <div className="row" style={headingRow} >
-                                        <h1 style={heading}>{this.state.heading}</h1>
-                                        <button className="btn work-button" onClick={this.handleOpenModal} ><p style={paragraph}>Read More <span style={span}>→</span></p></button>
+                                        <h1 className="work_heading" style={heading}>{this.state.heading}</h1>
+                                        <button className="btn work-button work_modal_button" onClick={this.handleOpenModal} ><p style={paragraph}>Read More <span style={span}>→</span></p></button>
                                     </div>
                                 </div>
                             </div>

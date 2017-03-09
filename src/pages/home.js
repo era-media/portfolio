@@ -19,23 +19,19 @@ class Home extends Component {
 
         const row = {
             display: 'flex',
+            alignItems: 'center',
         };
 
         const column = {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-            marginLeft: '90px',
-            marginRight: '60px',
-            marginBottom: '150px',
-            marginTop: '150px',
         };
 
         const paragraph = {
             textAlign: 'left',
             fontStyle: 'italic',
             color: 'white',
-            fontSize: '2.2em',
             lineHeight: '1.1em',
         };
 
@@ -48,10 +44,10 @@ class Home extends Component {
                 <div className="container-fluid">
                     <div className="container" style={container}>
                         <div className="row" style={row}>
-                            <div className="col-xs-12 col-sm-10 col-md-8 col-lg-4" style={column} >
-                                <h1 style={paragraph}>" We are a data-driven creative agency with a strong emphasis on content creation."</h1>
+                            <div className="col-xs-12 col-sm-10 col-md-8 col-lg-4 home_col" style={column} >
+                                <h1 className="home_paragraph" style={paragraph}>" We are a data-driven creative agency with a strong emphasis on content creation."</h1>
                                 <div className="row" style={divider} />
-                                <h1 style={paragraph}>" We bring brands up to speed with today's fast paced digital era through smart content creation, storytelling, and interactive experiences."</h1>
+                                <h1 className="home_paragraph" style={paragraph}>" We bring brands up to speed with today's fast paced digital era through smart content creation, storytelling, and interactive experiences."</h1>
                             </div>
                         </div>
                     </div>

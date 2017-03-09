@@ -28,3 +28,11 @@
     left: 60px;
     height: 40px;
 }
+
+@media screen and (max-width: 900px) {
+    .App-header img {
+        top: 45px;
+        left: 45px;
+        height: 30px;
+    }
+}

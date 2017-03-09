@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "era-portfolio"
+    "default": "era-portfolio",
+    "staging": "era-portfolio"
   }
 }

@@ -26,51 +26,31 @@ class Capability extends Component {
 
         const leftColumn = {
             display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'flex-start',
         };
 
         const rightColumn = {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'flex-end',
+            alignItems: 'flex-start',
             background: `url(https://firebasestorage.googleapis.com/v0/b/era-portfolio.appspot.com/o/era-artwork%2Fsea_side.jpg?alt=media&token=c4898e6a-f362-4c4b-ace1-80a99c8bbe8d) no-repeat center center`,
             backgroundSize: 'cover',
             backgroundColor: '#0A2037',
             color: 'white',
-            padding: '40px',
-        };
-
-        const whiteRow = {
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'center',
-            height: '100%',
-        };
-
-        const whiteColumn = {
-            margin: '10px',
-        };
-
-        const contentRow = {
-            display: 'flex',
-        };
-
-        const contentColumn = {
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            marginLeft: '60px',
-            marginRight: '40px',
-            marginBottom: '50px',
-            marginTop: '100px',
-            width: '100%',
+            minHeight: '500px',
+            padding: '0px',
         };
 
         const heading = {
             textAlign: 'left',
-            fontSize: '2.6em',
             lineHeight: '1.1em',
             fontStyle: 'italic',
             marginBottom: '5px',
+            padding: '20px',
+            backgroundColor: 'RGBA(10, 32, 55, 0.90)',
         };
 
         const list = {
@@ -78,6 +58,8 @@ class Capability extends Component {
             color: '#0A2037',
             fontSize: '2.0em',
             lineHeight: '1.0em',
+            padding: '40px',
+            marginLeft: '35px',
         };
 
         const divider = {
@@ -85,17 +67,14 @@ class Capability extends Component {
         };
 
         const headingRow = {
-            margin: '45px',
             display: 'flex',
             justifyContent: 'flex-end',
-            width: '408px',
-            height: '166px',
+            width: '380px',
         };
 
         const headingCol = {
-            padding: '35px',
-            width: '410px',
-            backgroundColor: 'RGBA(10, 32, 55, 0.90)',
+            width: '100%',
+            padding: '0px',
         }
 
         return (
@@ -103,34 +82,26 @@ class Capability extends Component {
                 <div className="container-fluid">
                     <div className="container" style={container}>
                         <div className="row" style={mainRow}>
-                            <div className="col-md-6" style={leftColumn}>
-                                <div className="row" style={whiteRow}>
-                                    <div className="col" style={whiteColumn}>
-                                        <div className="row" style={contentRow}>
-                                            <div className="col-xs-10 col-md-8 col-lg-8" style={contentColumn}>
-                                                <div className="row" style={divider} />
-                                                <ul className="list-unstyled" style={list}>
-                                                    <li>RESEARCH & STRATEGY</li>
-                                                    <div className="row" style={divider} />
-                                                    <li>REACH</li>
-                                                    <div className="row" style={divider} />
-                                                    <li>CONTENT</li>
-                                                    <div className="row" style={divider} />
-                                                    <li>TECHNOLOGY</li>
-                                                    <div className="row" style={divider} />
-                                                    <li>CREATIVE</li>
-                                                    <div className="row" style={divider} />
-                                                    <li>DIGITAL & <br />SOCIAL</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div className="col-xs-12 col-sm-12 col-md-6" style={leftColumn}>
+                                <div className="row" style={divider} />
+                                <ul className="list-unstyled" style={list}>
+                                    <li>RESEARCH &<br /> STRATEGY</li>
+                                    <div className="row" style={divider} />
+                                    <li>REACH</li>
+                                    <div className="row" style={divider} />
+                                    <li>CONTENT</li>
+                                    <div className="row" style={divider} />
+                                    <li>TECHNOLOGY</li>
+                                    <div className="row" style={divider} />
+                                    <li>CREATIVE</li>
+                                    <div className="row" style={divider} />
+                                    <li>DIGITAL &<br />SOCIAL</li>
+                                </ul>
                             </div>
-                            <div className="col-md-6" style={rightColumn}>
-                                <div className="row" style={headingRow} >
+                            <div className="col-xs-12 col-sm-12 col-md-6 artwork_col" style={rightColumn}>
+                                <div className="row capability_heading_row" style={headingRow} >
                                     <div className="col" style={headingCol}>
-                                        <h1 style={heading}>here's a list of our main capabilities.</h1>
+                                        <h1 className="capability_heading" style={heading}>here's a list of our main capabilities.</h1>
                                     </div>
                                 </div>
                             </div>

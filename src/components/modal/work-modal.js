@@ -24,24 +24,34 @@ class WorkModal extends Component {
 
         const container = {
             position: 'absolute',
-            top: '15px',
-            left: '15px',
-            right: '15px',
-            bottom: '15px',
+            top: '5px',
+            left: '5px',
+            right: '5px',
+            bottom: '5px',
             background: '#0A2037',
             color: '#FFFFFF',
             border: 'none',
             borderRadius: '0',
             padding: '25px',
-            margin: '0px',
+            margin: '10px',
+            height: 'initial',
             width: 'initial',
             display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
             alignItems: 'center',
         };
 
         const row = {
             display: 'flex',
-            justifyContent: 'center',
+            flexDirection: 'row',
+            alignItems: 'center',
+        };
+
+        const col = {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'flex-start',
         };
 
         const subHeading = {
@@ -61,7 +71,7 @@ class WorkModal extends Component {
         };
 
         const divider = {
-            marginBottom: '30px',
+            marginBottom: '20px',
         };
 
         const span = {
@@ -75,8 +85,8 @@ class WorkModal extends Component {
         return (
             <div className="container-fluid" style={overlay}>
                 <div className="container" style={container}>
-                    <div className="row" style={row} >
-                        <div className="col-md-6">
+                    <div className="row work_modal_row" style={row} >
+                        <div className="col" style={col}>
                             <h5 style={subHeading}>{this.state.company}</h5>
                             <p style={paragraph}>{this.state.about}</p>
                             <div className="row" style={divider} />
@@ -95,7 +105,6 @@ class WorkModal extends Component {
                             {socialList &&
                                 <SocialList social={this.state.social} />
                             }
-                            <div className="row" style={divider} />
                             <button className="btn work-button" onClick={this.props.clickHandler} ><p style={paragraph}><span style={span}>←</span> Read Less</p></button>
                         </div>
                     </div>

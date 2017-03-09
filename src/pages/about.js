@@ -28,8 +28,8 @@ class About extends Component {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-            padding: '50px',
-            width: '75%',
+            padding: '50px 25px',
+            margin: '10px auto',
         }
 
         const rightColumn = {
@@ -39,22 +39,20 @@ class About extends Component {
             background: `url(https://firebasestorage.googleapis.com/v0/b/era-portfolio.appspot.com/o/era-artwork%2Froad_crossing.jpg?alt=media&token=cea45289-9b19-4727-88a9-acb73eadb1a5) no-repeat center center`,
             backgroundSize: 'cover',
             backgroundColor: '#0A2037',
+            minHeight: '500px',
+            order: '-1',
         }
 
         const heading = {
             textAlign: 'left',
             color: '#0A2037',
-            fontSize: '2.2em',
             lineHeight: '1.0em',
             fontStyle: 'italic',
-            paddingLeft: '40px',
         };
 
         const paragraph = {
             textAlign: 'left',
             color: '#0A2037',
-            paddingLeft: '80px',
-            fontSize: '2.2em',
             lineHeight: '1.0em',
             fontStyle: 'italic',
         };
@@ -68,14 +66,14 @@ class About extends Component {
                 <div className="container-fluid">
                     <div className="container" style={container}>
                         <div className="row" style={mainRow}>
-                            <div className="col-xs-6 col-md-6" style={leftColumn}>
-                                <h1 style={heading}>mission.</h1>
-                                <p style={paragraph}>To tell meaningful brand <br />stories through combining the <br />power of high quality design, <br />engaging content, and smart <br />technology.</p>
+                            <div className="col-xs-12 col-sm-12 col-md-6" style={leftColumn}>
+                                <h1 className="about_heading" style={heading}>mission.</h1>
+                                <p className="about_paragraph" style={paragraph}>To tell meaningful brand stories through combining the power of high quality design, engaging content, and smart technology.</p>
                                 <div className="row" style={divider} />
-                                <h1 style={heading}>vision.</h1>
-                                <p style={paragraph}>Because change is inevitable,<br /> we aim to lead it.</p>
+                                <h1 className="about_heading" style={heading}>vision.</h1>
+                                <p className="about_paragraph" style={paragraph}>Because change is inevitable, we aim to lead it.</p>
                             </div>
-                            <div className="col-xs-6 col-md-6" style={rightColumn}>
+                            <div className="col-xs-12 col-sm-12 col-md-6" style={rightColumn}>
                             </div>
                         </div>
                     </div>
