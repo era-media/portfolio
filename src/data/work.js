@@ -3,6 +3,7 @@
 const Data = {
     "KOC": {
         flow: 'row-reverse',
+        position: '80% 50%',
         company: 'Kuwait Oil Compnay',
         heading: '3,000,000+ views across Instagram and YouTube.',
         about: 'Kuwait Oil Company is considered one of the most esteemed oil companies in the region, responsible for ongoing activities and exploratory operations in Kuwait since 1934. In 2016, KOC conducted one of the biggest exploratory surveys around the Kuwait Bay area.',
@@ -16,6 +17,7 @@ const Data = {
     },
     "IKEA": {
         flow: 'row-reverse',
+        position: '85% 50%',
         company: 'IKEA',
         heading: '1,000,000+ views and 169% increase in in-store foot traffic.',
         about: 'IKEA is a multinational group of companies that designs and sells ready-to-assemble furniture, appliances and home accessories.',
@@ -29,6 +31,7 @@ const Data = {
     },
     "MARKAZ": {
         flow: 'row',
+        position: '55% 50%',
         company: 'KUWAIT FINANCE CENTRE (MARKAZ)',
         heading: '43 years of service personified by Dr. Saleh Al-Ojairi.',
         about: 'Kuwait Finance Centre, more commonly known as “Markaz”, is one of the leading asset management and investment banking institutions in the region. The company has been a consistent source of trust and authority in the financial sector, since its establishment in 1974.',
@@ -42,6 +45,7 @@ const Data = {
     },
     "CIRCUIT": {
         flow: 'row',
+        position: '50% 50%',
         company: 'CIRCUIT+',
         heading: '4 gyms. 3 disciplines. 1 app and website.',
         about: 'Circuit+ Fitness is an all encompassing fitness brand based in Kuwait, with specialty studios for CrossFit, Yoga, and Bootcamp. In addition to its specialty studios, Circuit+ takes the fitness experience to people’s homes through nutritional support and a community of home private trainers.',
@@ -51,6 +55,7 @@ const Data = {
     },
     "BOE": {
         flow: 'row',
+        position: '35% 50%',
         company: 'THE BATTLE - EAST',
         heading: '710,327 impressions. 115,000 engagements. 3,000 attendees.',
         about: 'The Battle is an all encompassing fitness festival that was created in 2013 by Circuit+ Fitness, with the goal of uniting the excitement of fitness and the thriving athletic communities in the Middle East under one roof. Over the years, this initiative grew to attract athletes from all over the globe at The Battle – East – in Kuwait.',
@@ -65,6 +70,7 @@ const Data = {
     },
     "ALROUMI": {
         flow: 'row-reverse',
+        position: '50% 50%',
         company: 'ABDULLAH AL ROUMI',
         heading: 'A personal and national victory.',
         about: 'Abdullah Al Roumi is a member of the Kuwaiti National Assembly from the first district. Al Roumi has been in Parliament since 1985 and was previously the vice speaker of the Parliament. He is currently the most senior member of the National Front.',

@@ -56,7 +56,7 @@ class Client extends Component {
 
         const headingRow = {
             display: 'flex',
-            alignItems: 'flex-start',
+            alignItems: 'flex-end',
             width: '420px',
         };
 

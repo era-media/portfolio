@@ -9,15 +9,9 @@ class Work extends Component {
         this.state = {
             data: data,
             flow: data.flow,
-            company: data.company,
             heading: data.heading,
-            about: data.about,
-            goal: data.goal,
-            approach: data.approach,
             animation: data.animation,
-            video: data.video,
-            twitter: data.twitter,
-            instagram: data.instagram,
+            position: data.position,
             showModal: false,
         };
 
@@ -35,7 +29,8 @@ class Work extends Component {
 
     render() {
         const section = {
-            background: `url(${this.state.animation}) no-repeat center center`,
+            background: `url(${this.state.animation}) no-repeat`,
+            backgroundPosition: `${this.state.position}`,
             backgroundSize: 'cover',
         }
 
