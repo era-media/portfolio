@@ -14,13 +14,13 @@ class About extends Component {
             flexDirection: 'row',
             width: '100%',
             height: '100%',
+            padding: '0px 3px',
         };
 
         const mainRow = {
             display: 'flex',
             flexDirection: 'row',
             alignItems: 'stretch',
-            margin: '20px auto',
             width: '100%',
         };
 
@@ -29,7 +29,8 @@ class About extends Component {
             flexDirection: 'column',
             justifyContent: 'center',
             padding: '50px 25px',
-            margin: '25px auto',
+            border: '5px white solid',
+            backgroundColor: '#0A2037',
         }
 
         const rightColumn = {
@@ -39,20 +40,21 @@ class About extends Component {
             background: `url(https://firebasestorage.googleapis.com/v0/b/era-portfolio.appspot.com/o/era-artwork%2Froad_crossing.jpg?alt=media&token=cea45289-9b19-4727-88a9-acb73eadb1a5) no-repeat center center`,
             backgroundSize: 'cover',
             backgroundColor: '#0A2037',
+            border: '5px white solid',
             minHeight: '500px',
             order: '-1',
         }
 
         const heading = {
             textAlign: 'left',
-            color: '#0A2037',
+            color: '#FFFFFF',
             lineHeight: '1.0em',
             fontStyle: 'italic',
         };
 
         const paragraph = {
             textAlign: 'left',
-            color: '#0A2037',
+            color: '#FFFFFF',
             lineHeight: '1.0em',
             fontStyle: 'italic',
         };
@@ -65,7 +67,7 @@ class About extends Component {
             <div className="section" style={section} >
                 <div className="container-fluid">
                     <div className="container" style={container}>
-                        <div className="row" style={mainRow}>
+                        <div className="row main-row top-row" style={mainRow}>
                             <div className="col-xs-12 col-sm-12 col-md-6" style={leftColumn}>
                                 <h1 className="about_heading" style={heading}>mission.</h1>
                                 <p className="about_paragraph" style={paragraph}>To tell meaningful brand stories through combining the power of high quality design, engaging content, and smart technology.</p>

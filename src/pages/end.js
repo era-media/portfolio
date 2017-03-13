@@ -41,7 +41,7 @@ class End extends Component {
                     <div className="container" style={container}>
                         <div className="row" style={row}>
                             <div className="col" style={column} >
-                                <h1 className="end_paragraph" style={paragraph}>*insert qoute here that will inspire you to work with us...</h1>
+                                <h1 className="end_paragraph" style={paragraph}>*insert quote here that will inspire you to work with us...</h1>
                             </div>
                         </div>
                     </div>

@@ -14,13 +14,13 @@ class Capability extends Component {
             flexDirection: 'row',
             width: '100%',
             height: '100%',
+            padding: '0px 3px',
         };
 
         const mainRow = {
             display: 'flex',
             flexDirection: 'row',
             alignItems: 'stretch',
-            margin: '20px auto',
             width: '100%',
         };
 
@@ -29,6 +29,8 @@ class Capability extends Component {
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'flex-start',
+            border: '5px white solid',
+            backgroundColor: '#0A2037',
         };
 
         const rightColumn = {
@@ -42,6 +44,7 @@ class Capability extends Component {
             color: 'white',
             minHeight: '500px',
             padding: '0px',
+            border: '5px white solid',
         };
 
         const heading = {
@@ -55,7 +58,7 @@ class Capability extends Component {
 
         const list = {
             fontFamily: 'TextaLight',
-            color: '#0A2037',
+            color: '#FFFFFF',
             fontSize: '2.0em',
             lineHeight: '1.0em',
             padding: '40px',
@@ -81,7 +84,7 @@ class Capability extends Component {
             <div className="section" style={section} >
                 <div className="container-fluid">
                     <div className="container" style={container}>
-                        <div className="row" style={mainRow}>
+                        <div className="row main-row" style={mainRow}>
                             <div className="col-xs-12 col-sm-12 col-md-6" style={leftColumn}>
                                 <div className="row" style={divider} />
                                 <ul className="list-unstyled" style={list}>

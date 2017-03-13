@@ -14,13 +14,13 @@ class Client extends Component {
             flexDirection: 'row',
             width: '100%',
             height: '100%',
+            padding: '0px 3px',
         };
 
         const mainRow = {
             display: 'flex',
             flexDirection: 'row',
             alignItems: 'stretch',
-            margin: '20px auto',
             width: '100%',
         };
 
@@ -34,6 +34,7 @@ class Client extends Component {
             color: 'white',
             minHeight: '500px',
             padding: '0px',
+            border: '5px white solid',
         };
 
         const rightColumn = {
@@ -42,7 +43,7 @@ class Client extends Component {
             backgroundSize: 'contain',
             minHeight: '500px',
             padding: '10px',
-            margin: '25px auto',
+            border: '5px white solid',
         };
 
         const heading = {
@@ -70,15 +71,15 @@ class Client extends Component {
             <div className="section" style={section}>
                 <div className="container-fluid">
                     <div className="container" style={container}>
-                        <div className="row" style={mainRow}>
+                        <div className="row main-row" style={mainRow}>
                             <div className="col-md-6" style={leftColumn}>
                                 <div className="row capability_heading_row" style={headingRow} >
                                     <div className="col" style={headingCol}>
-                                        <h1 className="capability_heading" style={heading}>here are some of the people that trust us.</h1>
+                                        <h1 className="capability_heading" style={heading}>here are some of the people who trust us.</h1>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6" style={rightColumn}>
+                            <div className="col-md-6 client_col" style={rightColumn}>
                             </div>
                         </div>
                     </div>
